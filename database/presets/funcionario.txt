@@ -1,0 +1,8 @@
+CREATE TABLE funcionario(
+    idFuncionario INTEGER PRIMARY KEY NOT NULL, 
+    cpf VARCHAR(12) NOT NULL, 
+    nome VARCHAR(50) NOT NULL, 
+    data_nasc DATE NOT NULL, 
+    funcao_id INTEGER NOT NULL,
+    FOREIGN KEY (funcao_id) REFERENCES funcao(id)
+);

@@ -1,0 +1,4 @@
+CREATE TABLE categoria_quarto(
+    idCategoria INTEGER PRIMARY KEY NOT NULL, 
+    descricao TINYTEXT NOT NULL
+);

@@ -1,0 +1,7 @@
+CREATE TABLE quarto(
+    idQuarto INTEGER PRIMARY KEY NOT NULL, 
+    numero INTEGER NOT NULL,
+    valor FLOAT NOT NULL,
+    categoria_quarto_id INTEGER NOT NULL,
+    FOREIGN KEY (categoria_quarto_id) REFERENCES categoria_quarto(id)
+);

@@ -1,0 +1,4 @@
+CREATE TABLE funcao(
+    idFuncao INTEGER PRIMARY KEY NOT NULL, 
+    descricao TINYTEXT NOT NULL
+);

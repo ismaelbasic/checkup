@@ -1,0 +1,9 @@
+CREATE TABLE multa(
+    idMulta INTEGER PRIMARY KEY NOT NULL, 
+    multa_inicio DATETIME NOT NULL,
+    multa_fim DATETIME NOT NULL,
+    valor FLOAT NULL,
+    reserva_id INTEGER NOT NULL,
+
+    FOREIGN KEY (reserva_id) REFERENCES reserva (id)
+);

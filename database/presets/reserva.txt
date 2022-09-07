@@ -1,0 +1,14 @@
+CREATE TABLE reserva(
+    idReserva INTEGER PRIMARY KEY NOT NULL, 
+    checkin  DATETIME NOT NULL,
+    checkout  DATETIME NOT NULL,
+    num_renovacoes INTEGER NOT NULL DEFAULT 1,
+    total FLOAT,
+    hospede_id INTEGER NOT NULL,
+    quarto_id INTEGER NOT NULL,
+    conta_id INTEGER NOT NULL,
+
+    FOREIGN KEY (quarto_id) REFERENCES quarto (id),
+    FOREIGN KEY (conta_id) REFERENCES conta (id),
+    FOREIGN KEY (hospede_id) REFERENCES hospede (id)
+);

@@ -1,0 +1,9 @@
+CREATE TABLE item(
+    idItem INTEGER PRIMARY KEY NOT NULL, 
+    descricao TINYTEXT NOT NULL,
+    quantidade INTEGER NOT NULL,
+    item_valor FLOAT NOT NULL,
+    frigobar VARCHAR(4) DEFAULT 'não',
+    quarto_id INTEGER NOT NULL,
+    FOREIGN KEY (quarto_id) REFERENCES quarto (id)
+);

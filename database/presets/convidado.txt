@@ -1,0 +1,8 @@
+CREATE TABLE convidado(
+    idConvidado INTEGER PRIMARY KEY NOT NULL, 
+    reserva_id INTEGER NOT NULL, 
+    hospede_id INTEGER NOT NULL, 
+
+    FOREIGN KEY (reserva_id) REFERENCES reserva (id),
+    FOREIGN KEY (hospede_id) REFERENCES hospede (id)
+);

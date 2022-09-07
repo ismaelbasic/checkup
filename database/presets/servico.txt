@@ -1,0 +1,10 @@
+CREATE TABLE servico(
+    idServico INTEGER PRIMARY KEY NOT NULL, 
+    tipo VARCHAR(25) NOT NULL,
+    valor FLOAT NOT NULL,
+    reserva_id INTEGER NOT NULL,
+    funcionario_id INTEGER NOT NULL,
+
+    FOREIGN KEY (reserva_id) REFERENCES reserva (id),
+    FOREIGN KEY (funcionario_id) REFERENCES funcionario (id)
+);

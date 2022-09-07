@@ -1,0 +1,9 @@
+CREATE TABLE hospede(
+    idHospede INTEGER PRIMARY KEY NOT NULL, 
+    num_documento VARCHAR(20) NOT NULL, 
+    nome VARCHAR(50) NOT NULL, 
+    data_nasc DATE NOT NULL, 
+    endereco TINYTEXT NULL,
+    email TINYTEXT,
+    telefone CHAR(10)
+);

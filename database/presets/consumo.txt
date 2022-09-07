@@ -1,0 +1,8 @@
+CREATE TABLE consumo(
+    idConsumo INTEGER PRIMARY KEY NOT NULL, 
+    reserva_id INTEGER NOT NULL,
+    itens_id INTEGER NOT NULL,
+
+    FOREIGN KEY (reserva_id) REFERENCES reserva (id),
+    FOREIGN KEY (itens_id) REFERENCES itens (id)
+);
