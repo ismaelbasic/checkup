@@ -6,4 +6,5 @@ pip install PySide2
 
 # Usuario inicial
 user: admin
+
 password: 1234
